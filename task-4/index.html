@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/ico" href="images/icon.ico"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/jquery.waypoints.js"></script> -->
+
+
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+
+  <style media="screen">
+  </style>
+
+  <script>
+    $(window).on('load', function() {
+      let cloud = null; // тучка, которую перетаскивает пользователь в данный момент
+      // (null означает, что никакая тучка не перетаскивается в данный момент)
+      let dx, dy; // смещение положения курсора мыши относительно позиции тучки (left, top)
+      $(window)
+        .mousedown(function(e) {
+          if ($(e.target).is('.cloud'))
+          {
+            cloud = e.target;
+            dx = e.clientX - cloud.offsetLeft;
+            dy = e.clientY - cloud.offsetTop;
+          }
+        })
+        .mousemove(function(e) {
+          if (cloud)
+          {
+            cloud.style.left = e.clientX - dx + 'px';
+            cloud.style.top = e.clientY - dy + 'px';
+          }
+        })
+        .mouseup(function(e) {
+          if (cloud)
+          {
+            cloud.style.left = (e.clientX - dx) / innerWidth * 100 + '%';
+            cloud.style.top = (e.clientY - dy) / innerHeight * 100 + '%';
+            cloud = null;
+          }
+        });
+
+        $('.umbrella').click(function() {
+          $('.cloud, .text').removeClass('visible');
+          $(this).addClass('big');
+          $('.task').addClass('hide');
+          $('.text1').addClass('appear');
+          $('.page-container').addClass('scene-2');
+        });
+
+        $('.page-container').on('scroll', function() {
+          let sy = (this.scrollTop / this.scrollHeight - 1/3) * 3;
+          //if (sy < 0) sy = 0;
+          $('.box-2').css('transform', 'translateY(-' + (1 + sy)*60 +'%)');
+          $('.blue_cloud').css('transform',
+            'translate(-' + sy * 2 + '%, -' + sy * 1 + '%) ' +
+            'scale(' + (1 - sy * 0.7) +')'
+          );
+        });
+    });
+
+
+  </script>
+
+
+  <title>Gloom</title>
+</head>
+
+<body>
+
+<div class="page-container">
+
+  <div class="umbrella"></div>
+
+<div id="clouds">
+    <div class="cloud cloud1 visible"></div>
+    <div class="cloud cloud2 visible"></div>
+    <div class="cloud cloud3 visible"></div>
+    <div class="cloud cloud4 visible"></div>
+    <div class="cloud cloud5 visible"></div>
+</div>
+
+  <p class="task">найди спрятанный предмет</p>
+
+  <p class="text1">теперь каждый раз, когда тебе захочется поплакать, этот зонтик будет спасать тебя от грусти</p>
+
+  <div class="box-2"></div>
+  <div class="box">
+    <p class="text2">но если слез будет слишком много...</p>
+
+    <img class="rain" src="images/rain.png" alt="">
+    <img class="blue_cloud" src="images/blue_cloud.svg" alt="">
+
+    <p class="text3">мы будем ждать тебя!</p>
+    <img class="gloom" src="images/gloom.svg" alt="">
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>

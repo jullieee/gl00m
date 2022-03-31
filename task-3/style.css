@@ -1,0 +1,7 @@
+@import "reset.css";
+@import "content.css";
+@import "adaptive.css";
+@font-face {
+	font-family: 'Gramatika-Regular';
+	src: url('fonts/Gramatika-Regular.ttf');
+  font-weight: 900;

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/ico" href="images/icon.ico"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style media="screen">
+  </style>
+
+  <script>
+    $(window).on('load', function() {
+      /*$('#luzha > blue').hover(function() {
+        $(this).removeClass('blue');
+        if ($('#luzha> blue').length == 0)
+        {
+          setTimeout(() => history.back(), 1000);
+        }
+      })*/
+
+      const DISTANCE_LIMIT = 10000; // полная длина ломаной, которую образуют движения мыши над лужей,
+      // необходимая для полного "стирания" лужи
+
+      let $sponge = $('<div id="sponge"></div>').appendTo('#luzha');
+      let distance = 0; // полная длина ломаной, которую образуют движения мыши над лужей
+      let position = { x: 0, y: 0 }; // предыдущее положение курсора мыши
+      let luzha = document.querySelector('#luzha');
+      let bluePicture = $('#luzha .blue'); // стираемая лужа
+      $(window).mousemove(function(e) {
+        if ($(e.target).is('#luzha .blue path'))
+        {
+          let x = e.clientX - luzha.offsetLeft;
+          let y = e.clientY - luzha.offsetTop;
+          distance += Math.sqrt((x - position.x)**2 + (y - position.y)**2);
+          $sponge.css({
+            opacity: 1,
+            left: x + 'px',
+            top: y + 'px'
+          });
+          position.x = x;
+          position.y = y;
+          bluePicture.css({ opacity: 1 - distance / DISTANCE_LIMIT });
+          if (distance >= DISTANCE_LIMIT)
+          {
+            setTimeout(() => history.back(), 1000);
+          }
+        }
+        else
+        {
+          $sponge.css('opacity', 0);
+        }
+      });
+
+    });
+  </script>
+
+
+  <title>Gloom</title>
+</head>
+
+<body>
+<div class="page-container">
+  <div id="luzha">
+    <img class="white" src="images/white.png" alt="">
+    <svg class="blue" viewBox="0 0 534.25 344.58"><path fill="#1d3e7b" d="M14.24,276.35c-30.81-27.39-3.3-73.66,5.19-88.56,16.44-28.83,42.27-32,61.05-41.21,28.75-14.17,34.19-48.36,61-64.17,34.72-20.45,60.19,11,116.61,7.82,27.39-1.56,42.26-23.48,117.39-61C425.83,4,488.22-11.9,507,11.19c15,18.5-6.78,40.9-13.3,66.52-5.4,21.21,17,38.24,28.95,63.39,14.48,30.49,18.12,76.17-5,98.61C492.54,264,431.89,208,377.87,226.41c-31.08,10.59-23.37,38.47-74.35,83.73-25.88,23-38.82,34.47-55.56,34.44-37.68-.07-67.86-57.07-104.87-69.79C104,261.35,49,307.29,14.24,276.35Z"/></svg>
+  </div>
+  <p class="task">протри лужу из слез</p>
+
+</div>
+</body>
+
+</html>

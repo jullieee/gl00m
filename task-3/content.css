@@ -1,0 +1,212 @@
+html, body, .page-container {
+  margin: 0;
+  height: 100%;
+  display: block;
+  background: url("images/scratch.png") no-repeat;
+  background-color: #94BDDF;
+  background-size: 100%;
+}
+.page-container {
+  overflow: hidden;
+}
+.task {
+  font-family: 'Gramatika-Regular';
+  font-size: 40px;
+  position: absolute;
+  top: 76%;
+  left: 10%;
+  color: white;
+  line-height: 1.1;
+  transition: all 0.5s;
+}
+ul#kapli {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 70%;
+  transform: translateX(20%);
+  list-style-type: none;
+  margin: 0;
+  padding: 200px 20px 100px;
+}
+ul#kapli > li {
+  /* настроить адаптив для разных экранов: */
+  width: 150px;
+  height: 200px;
+  transition: all 0.5s;
+}
+.kap {
+  max-width: 100%;
+  max-height: 100%;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.8s;
+}
+  .kap1 {
+  transform: translate(40%, -60%);
+  animation: drain1 3s ease-in-out 0s forwards infinite;
+  }
+  @keyframes drain1 {
+    0% {transform: translate(40%, -60%); }
+    50% {transform: translate(40%, -80%); }
+    100% {transform: translate(40%, -60%); }
+  }
+  .kap1 g {
+    cursor: pointer;
+  }
+  .kap2 {
+  transform: translate(45%, -20%);
+  animation: drain2 3s ease-in-out 0.4s forwards infinite;
+  }
+  @keyframes drain2 {
+    0% {transform: translate(45%, -20%); }
+    50% {transform: translate(45%, -40%); }
+    100% {transform: translate(45%, -20%); }
+  }
+  .kap2 g {
+    cursor: pointer;
+  }
+  .kap3 {
+  transform: translate(20%, -50%);
+  animation: drain3 3s ease-in-out 0.2s forwards infinite;
+  }
+  @keyframes drain3 {
+    0% {transform: translate(20%, -50%); }
+    50% {transform: translate(20%, -70%); }
+    100% {transform: translate(20%, -50%); }
+  }
+  .kap3 g {
+    cursor: pointer;
+  }
+  .kap4 {
+  transform: translate(5%, -35%);
+  animation: drain4 3s ease-in-out 0.8s forwards infinite;
+  }
+  @keyframes drain4 {
+    0% {transform: translate(5%, -35%); }
+    50% {transform: translate(5%, -55%); }
+    100% {transform: translate(5%, -35%); }
+  }
+  .kap4 g {
+    cursor: pointer;
+  }
+  .kap5 {
+  transform: translate(-25%, -25%);
+  animation: drain5 3s ease-in-out 0.4s forwards infinite;
+  }
+  @keyframes drain5 {
+    0% {transform: translate(-25%, -25%); }
+    50% {transform: translate(-25%, -50%); }
+    100% {transform: translate(-25%, -25%); }
+  }
+  .kap5 g {
+    cursor: pointer;
+  }
+  .kap6 {
+  transform: translate(-20%, -40%);
+  animation: drain6 3s ease-in-out 0.2s forwards infinite;
+  }
+  @keyframes drain6 {
+    0% {transform: translate(-20%, -40%); }
+    50% {transform: translate(-20%, -60%); }
+    100% {transform: translate(-20%, -40%); }
+  }
+  .kap6 g {
+    cursor: pointer;
+  }
+  .kap7 {
+  transform: translate(-15%, -18%);
+  animation: drain7 3s ease-in-out 0.8s forwards infinite;
+  }
+  @keyframes drain7 {
+    0% {transform: translate(-15%, -18%); }
+    50% {transform: translate(-15%, -38%); }
+    100% {transform: translate(-15%, -18%); }
+  }
+  .kap7 g {
+    cursor: pointer;
+  }
+  .kap8 {
+  transform: translate(-20%, -30%);
+  animation: drain8 3s ease-in-out 0.6s forwards infinite;
+  }
+  @keyframes drain8 {
+    0% {transform: translate(-20%, -30%); }
+    50% {transform: translate(-20%, -50%); }
+    100% {transform: translate(-20%, -30%); }
+  }
+  .kap8 g {
+    cursor: pointer;
+  }
+  .kap9 {
+  transform: translate(10%, -30%);
+  animation: drain9 3s ease-in-out 0.8s forwards infinite;
+  }
+  @keyframes drain9 {
+    0% {transform: translate(10%, -30%); }
+    50% {transform: translate(10%, -60%); }
+    100% {transform: translate(10%, -30%); }
+  }
+  .kap9 g {
+    cursor: pointer;
+  }
+  .kap10 {
+  transform: translate(30%, -20%);
+  animation: drain10 3s ease-in-out 0.2s forwards infinite;
+  }
+  @keyframes drain10 {
+    0% {transform: translate(30%, -20%); }
+    50% {transform: translate(30%, -40%); }
+    100% {transform: translate(30%, -20%); }
+  }
+  .kap10 g {
+    cursor: pointer;
+  }
+  .kap11 {
+  transform: translate(30%, -25%);
+  animation: drain11 3s ease-in-out 0s forwards infinite;
+  }
+  @keyframes drain11 {
+    0% {transform: translate(30%, -25%); }
+    50% {transform: translate(30%, -45%); }
+    100% {transform: translate(30%, -25%); }
+  }
+  .kap11 g {
+    cursor: pointer;
+  }
+  .kap12 {
+  transform: translate(25%, -55%);
+  animation: drain12 3s ease-in-out 0.4s forwards infinite;
+  }
+  @keyframes drain12 {
+    0% {transform: translate(25%, -55%); }
+    50% {transform: translate(25%, -75%); }
+    100% {transform: translate(25%, -55%); }
+  }
+  .kap12 g {
+    cursor: pointer;
+  }
+.out_of_5 {
+  font-family: 'Gramatika-Regular';
+  font-size: 60px;
+  position: absolute;
+  top: 71%;
+  right: 20%;
+  color: white;
+  transition: all 0.5s;
+}
+.count {
+  font-family: 'Gramatika-Regular';
+  font-size: 60px;
+  position: absolute;
+  top: 72%;
+  right: 16%;
+  color: white;
+  transition: all 0.5s;
+}
+.kap.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+}

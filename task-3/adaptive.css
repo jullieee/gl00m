@@ -1,0 +1,190 @@
+@media (max-width: 1920px) { /* Full HD */
+
+}
+@media (max-width: 1650px) { /* self */
+  ul#kapli {
+    gap: 40px;
+    max-width: 69%;
+    transform: translateX(20%);
+    padding: 230px 20px 100px;
+  }
+  ul#kapli > li {
+    width: 130px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 1440px) { /* WXGA+ */
+  ul#kapli {
+    gap: 35px;
+    max-width: 70%;
+    transform: translateX(20%);
+    padding: 230px 20px 100px;
+  }
+  ul#kapli > li {
+    width: 120px;
+    height: 170px;
+  }
+  .task {
+    font-size: 35px;
+    top: 78%;
+    left: 10%;
+    line-height: 1.1;
+  }
+  .count {
+    font-size: 55px;
+    top: 74%;
+    right: 16%;
+  }
+}
+@media (max-width: 1366px) { /* WXGA */
+  .task {
+    font-size: 33px;
+    top: 79%;
+  }
+  .count {
+    font-size: 55px;
+    top: 75%;
+    right: 16%;
+  }
+}
+@media (max-width: 1300px) { /* self */
+  ul#kapli {
+    gap: 35px;
+    max-width: 50%;
+    transform: translateX(45%);
+    padding: 150px 20px 100px;
+  }
+  ul#kapli > li {
+    width: 110px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 1100px) { /* iPad Portrait (XGA) */
+  ul#kapli {
+    gap: 40px;
+    max-width: 59%;
+    transform: translateX(31%);
+    padding: 220px 20px 100px;
+  }
+  ul#kapli > li {
+    width: 100px;
+    height: 150px;
+  }
+  .task {
+    font-size: 30px;
+    top: 85%;
+    left: 8%;
+  }
+  .count {
+    font-size: 50px;
+    top: 81%;
+    right: 12%;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) { iPad Landscape (XGA)
+  ul#kapli {
+    gap: 35px;
+    max-width: 55%;
+    transform: translateX(46%);
+    padding: 220px 5px 100px;
+  }
+  ul#kapli > li {
+    width: 65px;
+    height: 130px;
+  }
+}
+@media (max-width: 882px) { /* self */
+  ul#kapli {
+    gap: 40px;
+    max-width: 63%;
+    transform: translateX(23%);
+    padding: 220px 20px 100px;
+  }
+  ul#kapli > li {
+    width: 80px;
+    height: 130px;
+  }
+  .task {
+    font-size: 26px;
+    top: 82%;
+  }
+  .count {
+    font-size: 45px;
+    top: 78.5%;
+  }
+}
+  @media (max-width: 698px) { /* self */
+    ul#kapli {
+      padding: 180px 20px 100px;
+    }
+    .task {
+      font-size: 23px;
+      max-width: 30%;
+      top: 84%;
+      line-height: 1.1;
+    }
+    .count {
+      font-size: 40px;
+      top: 82%;
+      right: 13%;
+    }
+  }
+  @media (max-device-width: 510px) { /* self */
+    ul#kapli {
+      gap: 40px;
+      max-width: 70%;
+      transform: translateX(20%);
+      padding: 160px 0px 100px;
+    }
+    ul#kapli > li {
+      width: 60px;
+      height: 110px;
+    }
+    .task {
+      max-width: 40%;
+    }
+  }
+@media (max-device-width: 414px) { /* iPhone */
+  ul#kapli {
+    gap: 40px;
+    max-width: 70%;
+    transform: translateX(20%);
+    padding: 160px 0px 100px;
+  }
+  ul#kapli > li {
+    width: 60px;
+    height: 110px;
+  }
+  .task {
+    font-size: 21px;
+    top: 86%;
+    max-width: 47%;
+  }
+  .count {
+    font-size: 35px;
+    top: 84%;
+  }
+}
+
+@media (min-device-width: 360px) and (max-device-width: 360px) { /* Android */
+  ul#kapli {
+    gap: 33px;
+    max-width: 63%;
+    transform: translateX(28%);
+    padding: 100px 2px 100px;
+  }
+  ul#kapli > li {
+    width: 50px;
+    height: 90px;
+  }
+  .task {
+    font-size: 20px;
+    max-width: 47%;
+  }
+  .count {
+    font-size: 35px;
+  }
+}

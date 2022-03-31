@@ -1,0 +1,140 @@
+html, body, .page-container {
+  margin: 0;
+  /* height: 100%; */
+  display: block;
+  background: url("images/stripes.png") repeat repeat;
+  background-color: #94BDDF;
+  background-size: 100%;
+  overflow: hidden;
+}
+#luzha {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 70%;
+  height: 70%;
+}
+#luzha #sponge {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  background: url(images/gubka.png) center center no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+#luzha .blue path {
+  cursor: none;
+}
+.blue, .white  {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.task {
+  font-family: 'Gramatika-Regular';
+  font-size: 40px;
+  position: absolute;
+  top: 76%;
+  left: 10%;
+  color: white;
+  transition: all 0.5s;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: black;
+  display: inline-block;
+  position: relative;
+  border: 1px solid white;
+}
+
+@media (max-width: 1920px) { /* Full HD */
+
+}
+
+@media (max-width: 1440px) { /* WXGA+ */
+  .task {
+    font-size: 35px;
+    top: 78%;
+    /* max-width: 30%; */
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 1366px) { /* WXGA */
+  .task {
+    font-size: 33px;
+    top: 79%;
+    /* max-width: 40%; */
+    line-height: 1.1;
+  }
+}
+
+  @media (max-width: 1024px) { /*{ iPad Portrait (XGA) */
+  .task {
+    font-size: 30px;
+    top: 85%;
+    /* max-width: 30%; */
+    line-height: 1.1;
+    left: 8%;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) { /* iPad Landscape (XGA) */
+  .task {
+    font-size: 32px;
+    top: 79%;
+    /* max-width: 35%; */
+    line-height: 1.1;
+  }
+}
+@media (max-device-width: 925px) { /* self */
+  .task {
+    font-size: 26px;
+    top: 82%;
+    /* max-width: 30%; */
+    line-height: 1.1;
+  }
+}
+@media (max-device-width: 720px) { /* self */
+  .task {
+    font-size: 23px;
+    top: 84%;
+    max-width: 23%;
+    line-height: 1.1;
+  }
+}
+@media (max-device-width: 610px) { /* self */
+  .task {
+    max-width: 27%;
+  }
+}
+@media (max-device-width: 520px) { /* self */
+  .task {
+    max-width: 32%;
+  }
+}
+@media (max-device-width: 470px) { /* self */
+  .task {
+    max-width: 36%;
+  }
+}
+@media (max-device-width: 414px) { /* iPhone */
+  .task {
+    font-size: 21px;
+    top: 86%;
+    max-width: 37%;
+    line-height: 1.1;
+  }
+}
+@media (min-device-width: 360px) and (max-device-width: 360px) { /* Android */
+  .task {
+    font-size: 20px;
+  }
+}

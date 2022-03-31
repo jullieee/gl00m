@@ -1,0 +1,338 @@
+@media (max-width: 1920px) { /* Full HD */
+
+}
+
+@media (max-width: 1440px) { /* WXGA+ */
+  .task {
+    font-size: 37px;
+  }
+  .cloud1 {
+    width: 50%;
+    height: 50%;
+    left: 50%;
+  }
+  .cloud2 {
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 27%;
+  }
+  .cloud3 {
+    width: 35%;
+    height: 35%;
+    left: 35%;
+    top: 18%;
+  }
+  .cloud4 {
+    width: 37%;
+    height: 37%;
+    left: 53%;
+  }
+  .cloud5 {
+    width: 30%;
+    height: 30%;
+    left: 43%;
+  }
+  .rain {
+    width: 55%;
+    bottom: 0.5%;
+    left: 5%;
+  }
+  .text2 {
+    font-size: 45px;
+  }
+  .text1 {
+    font-size: 44px;
+    max-width: 80%;
+  }
+
+}
+
+@media (max-width: 1366px) { /* WXGA */
+  .task {
+    font-size: 32px;
+    max-width: 66%;
+    top: 79%;
+    max-width: 30%;
+  }
+  .gloom {
+    top: 55%;
+    width: 50%;
+    height: 27%;
+  }
+  .rain {
+    width: 60%;
+    left: 2%;
+  }
+  .text1 {
+    font-size: 40px;
+    max-width: 100%;
+  }
+  .text3 {
+    font-size: 30px;
+    top: 55%;
+    left: 8%;
+  }
+  .blue_cloud {
+    top: 25%;
+    transform-origin: 30% 50%;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait){ /* iPad Portrait (XGA) */
+  .task {
+    font-size: 30px;
+    top: 81%;
+    max-width: 38%;
+  }
+  .cloud1 {
+    width: 55%;
+    height: 55%;
+    left: 45%;
+    top: 22%;
+  }
+  .cloud2 {
+    width: 55%;
+    height: 55%;
+    left: 20%;
+  }
+  .cloud3 {
+    width: 40%;
+    height: 40%;
+    left: 30%;
+  }
+  .cloud4 {
+    width: 42%;
+    height: 42%;
+    left: 47%;
+  }
+  .cloud5 {
+    width: 35%;
+    height: 35%;
+    left: 38%;
+    top: 38%;
+  }
+  .umbrella {
+    width: 22%;
+    height: 22%;
+    top: 42%;
+    left: 50%;
+  }
+  .text2 {
+    font-size: 37px;
+    max-width: 250%;
+  }
+  .text1 {
+    font-size: 35px;
+    max-width: 120%;
+  }
+  .gloom {
+    top: 52%;
+    width: 55%;
+    height: 32%;
+  }
+  .rain {
+    width: 65%;
+    bottom: 13%;
+    left: 1%;
+  }
+  .text3 {
+    font-size: 27px;
+    top: 57%;
+    left: 7%;
+  }
+  .blue_cloud {
+    top: -5%;
+    transform-origin: 30% 75%;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) { /* iPad Landscape (XGA) */
+  .task {
+    font-size: 30px;
+    max-width: 27%;
+  }
+}
+@media (max-device-width: 700px) /* self */ {
+  .task {
+    font-size: 25px;
+    top: 84%;
+    max-width: 50%;
+  }
+  .cloud1 {
+    width: 60%;
+    height: 60%;
+    left: 37%;
+    top: 15%;
+  }
+  .cloud2 {
+    width: 60%;
+    height: 60%;
+    left: 16%;
+    top: 21%;
+  }
+  .cloud3 {
+    width: 45%;
+    height: 45%;
+    left: 25%;
+    top: 16%;
+  }
+  .cloud4 {
+    width: 47%;
+    height: 47%;
+    left: 44%;
+    top: 37%;
+  }
+  .cloud5 {
+    width: 40%;
+    height: 40%;
+    left: 33%;
+    top: 33%;
+  }
+  .umbrella {
+    width: 25%;
+    height: 25%;
+    top: 40%;
+    left: 45%;
+  }
+  .text2 {
+    font-size: 32px;
+  }
+  .text1 {
+    font-size: 30px;
+    max-width: 140%;
+  }
+  .gloom {
+    top: 51%;
+    width: 55%;
+    height: 32%;
+  }
+  .rain {
+    width: 65%;
+    bottom: 12%;
+    left: 1%;
+  }
+  .text3 {
+    font-size: 27px;
+    top: 52%;
+    left: 7%;
+  }
+  .blue_cloud {
+    top: -10%;
+    transform-origin: 30% 80%;
+  }
+}
+@media (max-device-width: 550px) /* self */ {
+  .task {
+    font-size: 22px;
+    top: 86%;
+    max-width: 55%;
+  }
+  .cloud1 {
+    width: 65%;
+    height: 65%;
+    left: 32%;
+    top: 15%;
+  }
+  .cloud2 {
+    width: 65%;
+    height: 65%;
+    left: 11%;
+    top: 21%;
+  }
+  .cloud3 {
+    width: 50%;
+    height: 50%;
+    left: 20%;
+    top: 16%;
+  }
+  .cloud4 {
+    width: 52%;
+    height: 52%;
+    left: 39%;
+    top: 37%;
+  }
+  .cloud5 {
+    width: 45%;
+    height: 45%;
+    left: 27%;
+    top: 33%;
+  }
+  .umbrella {
+    width: 25%;
+    height: 25%;
+    top: 40%;
+    left: 45%;
+  }
+  .text2 {
+    font-size: 28px;
+  }
+  .text1 {
+    font-size: 25px;
+    max-width: 140%;
+  }
+  .gloom {
+    top: 56%;
+    width: 55%;
+    height: 32%;
+  }
+  .rain {
+    width: 65%;
+    bottom: 12%;
+    left: 1%;
+  }
+  .text3 {
+    font-size: 27px;
+    top: 59%;
+    left: 7%;
+  }
+  .blue_cloud {
+    top: -15%;
+    transform-origin: 30% 90%;
+  }
+}
+
+@media (max-device-width: 414px) { /* iPhone */
+  .task {
+    font-size: 20px;
+    top: 86%;
+    max-width: 55%;
+  }
+  .text2 {
+    font-size: 24px;
+  }
+  .text1 {
+    font-size: 22px;
+  }
+  .gloom {
+    top: 61%;
+    width: 55%;
+    height: 32%;
+  }
+  .text3 {
+    font-size: 20px;
+    top: 63%;
+    left: 7%;
+  }
+  .blue_cloud {
+    top: -21%;
+    transform-origin: 30% 100%;
+  }
+}
+
+@media (max-device-width: 360px) { /* Android */
+  .text3 {
+    top: 64%;
+    font-size: 18px;
+  }
+  .gloom {
+    top: 58%;
+  }
+  .blue_cloud {
+    top: -13%;
+    transform-origin: 30% 90%;
+  }
+  .rain {
+    bottom: 10%;
+  }
+}

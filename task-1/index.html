@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/ico" href="heads/icon.ico"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style media="screen">
+  </style>
+
+  <script>
+    $(window).on('load', function() {
+      $('#faces > li.make-smile').click(function() {
+        $(this).removeClass('make-smile');
+        if ($('#faces > li.make-smile').length == 0)
+        {
+          setTimeout(() => history.back(), 1000);
+        }
+      })
+    })
+  </script>
+
+
+  <title>Gloom</title>
+</head>
+
+<body>
+  <div class="page-container">
+      <ul id="faces">
+      <li class="make-smile">
+          <img class="head1_sad"src="heads/sad1.png" alt="">
+          <img class="head1"src="heads/happy1.png" alt="">
+      </li>
+      <li>
+        <img class="head4"src="heads/happy4.png" alt="">
+      </li>
+      <li class="make-smile">
+        <img class="head2_sad"src="heads/sad2.png" alt="">
+        <img class="head2"src="heads/happy2.png" alt="">
+      </li>
+    <li>
+      <img class="head3"src="heads/happy3.png" alt="">
+    </li>
+
+    <li>
+      <img class="head5"src="heads/happy5.png" alt="">
+    </li>
+    </ul>
+    <p class="task">подари улыбку грустящим</p>
+
+  </div>
+</body>
+
+</html>

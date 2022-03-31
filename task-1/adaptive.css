@@ -1,0 +1,170 @@
+@media (max-width: 1920px) { /* Full HD */
+
+}
+@media (max-width: 1565px) { /* self */
+  ul#faces {
+    max-width: 55%;
+    transform: translateX(40%);
+    }
+}
+
+@media (max-width: 1440px) { /* WXGA+ */
+  ul#faces {
+    gap: 40px;
+    height: 95%;
+  }
+  ul#faces > li {
+    flex-basis: 190px; /* change in adaptives */
+  }
+  ul#faces > li::before {
+    left: 50%;
+    top: 45%;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%, -50%);
+  }
+  .task {
+    font-size: 35px;
+    top: 78%;
+    max-width: 30%;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 1366px) { /* WXGA */
+  ul#faces {
+    gap: 40px;
+    height: 95%;
+    max-width: 61%;
+    transform: translateX(32%);
+    }
+  }
+  ul#faces > li {
+    flex-basis: 180px; /* change in adaptives */
+  }
+  ul#faces > li::before {
+    left: 50%;
+    top: 45%;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%, -50%);
+  }
+  .task {
+    font-size: 33px;
+    top: 79%;
+    max-width: 30%;
+    line-height: 1.1;
+  }
+}
+
+  @media (max-width: 1024px) { /*{ iPad Portrait (XGA) */
+  ul#faces {
+    gap: 32px;
+    height: 85%;
+    max-width: 70%;
+    transform: translateX(13%);
+  }
+  ul#faces > li {
+    flex-basis: 160px;
+  }
+  ul#faces > li::before {
+    left: 50%;
+    top: 45%;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%, -50%);
+  }
+  .task {
+    font-size: 30px;
+    top: 85%;
+    max-width: 30%;
+    line-height: 1.1;
+    left: 8%;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) { /* iPad Landscape (XGA) */
+  ul#faces {
+    gap: 35px;
+    height: 90%;
+    max-width: 72%;
+    transform: translateX(19%);
+  }
+  ul#faces > li {
+    flex-basis: 170px;
+  }
+  ul#faces > li::before {
+    left: 50%;
+    top: 45%;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%, -50%);
+  }
+  .task {
+    font-size: 32px;
+    top: 79%;
+    max-width: 35%;
+    line-height: 1.1;
+  }
+}
+@media (max-device-width: 925px) { /* self */
+  ul#faces {
+    gap: 35px;
+    height: 90%;
+    max-width: 75%;
+    transform: translateX(16%);
+  }
+  ul#faces > li {
+    flex-basis: 155px; /* change in adaptives */
+  }
+  .task {
+    font-size: 26px;
+    top: 82%;
+    max-width: 30%;
+    line-height: 1.1;
+  }
+}
+@media (max-device-width: 720px) { /* self */
+  ul#faces {
+    gap: 35px;
+    height: 90%;
+    max-width: 90%;
+    transform: translateX(5%);
+  }
+  ul#faces > li {
+    flex-basis: 140px; /* change in adaptives */
+  }
+  .task {
+    font-size: 23px;
+    top: 84%;
+    max-width: 40%;
+    line-height: 1.1;
+  }
+}
+
+@media (max-device-width: 414px) { /* iPhone */
+  ul#faces {
+    gap: 40px;
+    height: 90%;
+    max-width: 90%;
+    transform: translateX(5%);
+  }
+  ul#faces > li {
+    flex-basis: 130px; /* change in adaptives */
+  }
+  .task {
+    font-size: 21px;
+    top: 86%;
+    max-width: 50%;
+    line-height: 1.1;
+  }
+}
+
+@media (max-device-width: 360px) { /* Android */
+  .task {
+    font-size: 20px;
+  }
+  ul#faces > li {
+    flex-basis: 105px; /* change in adaptives */
+  }
+}

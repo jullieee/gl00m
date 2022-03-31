@@ -1,0 +1,238 @@
+html {
+      height: 100%;
+  }
+body {
+  height: 100%;
+  width: 100%;
+  background: white;
+  display: block;
+}
+.page-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+  width: 100%;
+}
+svg#wave {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+svg#wave path {
+  transform: translateY(95%);
+  animation: oceanWave 13s linear;
+}
+@keyframes oceanWave {
+  0% { d: path("M0,192 C220,100,440,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0 500"); transform: translateY(95%)}
+  20% { d: path("M0,100 C220,100,440,292,660,292 C880,292,1100,100,1320,100 L1320 700 L0 700"); transform: translateY(75%)}
+  40% { d: path("M0,192 C220,290,440,290,660,192 C880,100,1100,100,1320,192 L1320 900 L0 900"); transform: translateY(50%)}
+  60% { d: path("M0,292 C220,292,440,100,660,100 C880,100,1100,292,1320,292 L1320 900 L0 900"); transform: translateY(20%)}
+  80% { d: path("M0,192 C220,100,440,100,660,192 C880,290,1100,290,1320,192 L1320 1100 L0 1100"); transform: translateY(0%)}
+  95% { d: path("M0,192 C220,100,440,100,660,192 C880,290,1100,290,1320,192 L1320 1100 L0 1100"); transform: translateY(0%); opacity: 1}
+  100% { d: path("M0,192 C220,100,440,100,660,192 C880,290,1100,290,1320,192 L1320 1100 L0 1100"); transform: translateY(0%); opacity: 0}
+
+}
+.text1 {
+  font-family: 'Gramatika-Regular';
+  font-size: 60px;
+  text-align:center;
+  position: absolute;
+  color: #94BDDF;
+  width: 100%;
+  transform: translateY(240%);
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeOut 6s ease 1s forwards;
+  transition: all 0.5s;
+}
+.text2 {
+  font-family: 'Gramatika-Regular';
+  font-size: 60px;
+  text-align:center;
+  position: absolute;
+  color: white;
+  width: 100%;
+  transform: translateY(580%);
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInOut 11.5s ease 1s forwards;
+  animation-iteration-count: 1;
+  transition: all 0.5s;
+}
+@media (max-width: 1440px) { /* WXGA+ */
+  .text1 {
+    font-size: 50px;
+      transform: translateY(300%);
+  }
+  .text2 {
+    font-size: 50px;
+    transform: translateY(640%);
+  }
+}
+@media (max-width: 1366px) { /* WXGA */
+  .text1 {
+    font-size: 45px;
+      transform: translateY(360%);
+  }
+  .text2 {
+    font-size: 45px;
+    transform: translateY(700%);
+  }
+}
+@media (max-width: 1024px) { /* iPad Landscape (XGA) */
+  .text1 {
+    font-size: 37px;
+      transform: translateY(450%);
+  }
+  .text2 {
+    font-size: 37px;
+    transform: translateY(790%);
+  }
+}
+@media (max-device-width: 414px) { /* iPhone */
+  .text1 {
+    font-size: 27px;
+      transform: translateY(540%);
+  }
+  .text2 {
+    font-size: 27px;
+    transform: translateY(880%);
+  }
+}
+@keyframes fadeInOut {
+  0% {opacity: 0; visibility: hidden; }
+  75% {opacity: 0; visibility: hidden; }
+  80% {opacity: 1; visibility: visible; }
+  95% {opacity: 1; visibility: visible; }
+  100% {opacity: 0; visibility: hidden; }
+}
+@keyframes fadeIn {
+  0% {opacity: 0; visibility: visible; }
+  100% {opacity: 1; visibility: visible; }
+}
+@keyframes fadeOut {
+  0% {opacity: 1; }
+  90% {opacity: 1; }
+  100% {opacity: 0; visibility: hidden; }
+}
+#luzhy {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  animation: fadeIn 2s ease 12s forwards;
+}
+#luzhy.start {
+  animation: fadeIn 2s ease 0s forwards;
+}
+#luzhy a {
+  cursor: default;
+}
+#luzhy path, #luzhy img {
+  cursor: pointer;
+}
+#luzha1 {
+  position: absolute;
+  left: -2%;
+  bottom: -7%;
+  width: 35%;
+  height: 61%;
+  margin: 30px auto;
+  transition: all .4s;
+  animation: luzha1-animation 4s linear infinite alternate;
+}
+a.hover #luzha1 {
+  width: 37%;
+  height: 64%;
+}
+@keyframes luzha1-animation {
+  0% { transform: scale(0.95, 1.1) rotate(-2deg); }
+  100% { transform: scale(1.05, 0.93) rotate(3deg); }
+}
+#luzha2 {
+  position: absolute;
+  left: 12%;
+  top: -5%;
+  width: 40%;
+  height: 54%;
+  transition: all .4s;
+  animation: luzha2-animation 4s linear infinite alternate;
+}
+a.hover #luzha2 {
+  width: 42%;
+  height: 57%;
+}
+
+@keyframes luzha2-animation {
+  0% { transform: scale(1.05, 0.93) rotate(3deg); }
+  100% { transform: scale(0.95, 1.1) rotate(-2deg); }
+}
+#luzha3 {
+  position: absolute;
+  right: 21%;
+  bottom: -3%;
+  width: 40%;
+  height: 53%;
+  transition: all .4s;
+  animation: luzha3-animation 4s linear infinite alternate;
+}
+a.hover #luzha3 {
+  width: 41%;
+  height: 57%;
+}
+@keyframes luzha3-animation {
+  0% { transform: scale(0.97, 1.12) rotate(-3deg); }
+  100% { transform: scale(1.07, 0.95) rotate(2deg); }
+}
+#luzha4 {
+  position: absolute;
+  right: -8%;
+  top: 0;
+  width: 47%;
+  height: 105%;
+  transition: all .4s;
+  animation: luzha4-animation 4s linear infinite alternate;
+}
+a.hover #luzha4 {
+  width: 50%;
+  height: 110%;
+}
+@keyframes luzha4-animation {
+  0% { transform: scale(1.02, 1) rotate(0deg); }
+  100% { transform: scale(0.94, 1.08) rotate(-2deg); }
+}
+.one {
+  position: absolute;
+  left: 20%;
+  bottom: 19%;
+  height: 15%;
+  transform: translate(-50%, -20%);
+}
+.two {
+  position: absolute;
+  left: 41%;
+  top: 10%;
+  height: 15%;
+  transform: translate(-50%, -50%);
+}
+.three {
+  position: absolute;
+  left: 58%;
+  bottom: 10%;
+  height: 15%;
+  transform: translate(-60%, -5%);
+}
+.four {
+  position: absolute;
+  right: 6%;
+  top: 5%;
+  height: 15%;
+  transform: translate(-20%, -5%);
+}

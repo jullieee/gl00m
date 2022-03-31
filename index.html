@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/ico" href="images/icon.ico"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="js/java.js"></script> -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style media="screen">
+
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (location.hash == '#start')
+      {
+        $('#luzhy').addClass('start');
+      }
+      else
+      {
+        document.querySelector('.page-container').insertAdjacentHTML('afterbegin',
+
+          `<svg id="wave" viewBox="0 300 1320 666" preserveAspectRatio="none">
+             <path fill="#94BDDF"/>
+           </svg>
+           <p class="text2">давай по порядку</p>
+           <p class="text1">проверим твой<br>уровень грусти?</p>`
+         );
+
+        location.hash = 'start';
+     }
+    });
+
+    $(window).on("load", function() {
+
+      $(window).mousemove(function(e) {
+        $('#luzhy a').removeClass('hover');
+        if ($(e.target).is('#luzhy path, #luzhy img'))
+        {
+          $(e.target).parents('a').addClass('hover');
+        }
+      });
+
+      $('#luzhy a').click(function(e) {
+        e.preventDefault();
+        if ($(e.target).is('#luzhy path, #luzhy img'))
+        {
+          location.href = this.href;
+        }
+      });
+    });
+  </script>
+
+
+  <title>Gloom</title>
+</head>
+
+<body>
+  <div class="page-container">
+
+
+
+     <div id="luzhy">
+
+      <a href="task-1/index.html">
+        <svg id="luzha1" viewBox="0 0 253.13 242.92" preserveAspectRatio="none"><path fill="#93bddf" d="M1.17,36.31S43.43-2.82,61.21.16C69.88,1.62,78.77,6.35,80,33.29c1.44,31.93-4.53,47.11,7.93,54.06s23.4-.38,31.58-6.68c6-4.65,15.81-11.66,22.16-15.87,11.65-7.72,26.61-17.3,35.37-21.33,15.48-7.12,29.83-9.29,47-7.57,15.21,1.53,36.91,18.26,26.35,40.18s-23.85,30.11-24.26,50.08c-.23,11,8.44,23.89,9.39,44.77.93,20.58-5,59.6-14.77,72H0Z"/></svg>
+        <img class="one" src="images/1.svg" alt="">
+      </a>
+
+      <a href="task-2/index.html">
+        <svg id="luzha2" viewBox="0 0 234.61 140.94" preserveAspectRatio="none"><path fill="#93bddf" d="M234.61,0c-1.66,11.1-2.77,32.19-3.52,39.57-1.29,12.69-1.93,22.94-2.15,26.8-1,17.37-1.26,22.53-2.46,27.43-4.06,16.64-8.15,22.83-9.67,25.2-3.31,5.16-6.92,10.63-13.89,15.26a37,37,0,0,1-19.76,6.66A29.18,29.18,0,0,1,166.53,137a28.66,28.66,0,0,1-10.18-11.15,36.35,36.35,0,0,1-4.3-15.85c-.14-1.91,0-1.73,1.37-20.34,0,0,.2-2.71,0-9-.12-3.87-.34-5.83-1.37-8a13.72,13.72,0,0,0-2.94-4.11,12,12,0,0,0-4.5-2.73c-3.63-1.19-11.06-.08-13.22.38-9.36,2-13.25,3.53-17.1,5.29A386.54,386.54,0,0,0,77.31,91c-19.37,11.89-20.13,13.62-30.13,18.2-21.2,9.69-29.47,7.27-32.87,5.87-1.74-.71-8.55-3.77-12.13-11C-.24,99.29-.2,94.54.22,90.24c1.68-17,9.8-31,11.35-33.65,7-11.77,28.87-39,43.53-56.59Z"/></svg>
+        <img class="two" src="images/2.svg" alt="">
+      </a>
+
+      <a href="task-4/index.html">
+        <svg id="luzha4" viewBox="0 0 172.09 320.48" preserveAspectRatio="none"><path fill="#93bddf" d="M38.27,0S1,52.27,0,83.19c-.66,20.86,17.31,17.65,29.06,13.35A78.3,78.3,0,0,0,41,91C48.12,86.88,72.25,74.27,86.5,81c19.78,9.39,18.58,25.63,7.43,53.21S71,193,84.54,233.45s37.86,87,37.86,87h49.69V0Z"/></svg>
+        <img class="four" src="images/4.svg" alt="">
+      </a>
+
+      <a href="task-3/index.html">
+        <svg id="luzha3" viewBox="0 0 204.57 199.54" preserveAspectRatio="none"><path fill="#93bddf" d="M17.79,199.54S4,155.23,1.61,140.36C-1,123.61-.89,94,5.65,77.88c5.61-13.83,14.67-21.74,23.09-22.26S42,59.57,46.91,65s7.57,10.7,12,9.92S79.52,46.52,91.78,32.44,121.26-1.48,147.35.09a51.1,51.1,0,0,1,7.94,1.06,26.5,26.5,0,0,1,20.35,30.74,70.86,70.86,0,0,1-4.29,14.37c-6.53,15.65-11.59,35.73-12.27,53-.41,10.7-.52,27.39,7.83,43s37.66,57.28,37.66,57.28Z"/></svg>
+        <img class="three" src="images/3.svg" alt="">
+      </a>
+
+    </div>
+
+
+</div>
+
+</body>
+
+</html>

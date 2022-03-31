@@ -41,16 +41,16 @@ ul#faces > li:nth-child(1)::before {
   background-image: url(heads/white1.png);
 }
 ul#faces > li:nth-child(2)::before {
-  background-image: url(heads/white3.png);
+  background-image: url(heads/white3.PNG);
 }
 ul#faces > li:nth-child(3)::before {
   background-image: url(heads/white2.png);
 }
 ul#faces > li:nth-child(4)::before {
-  background-image: url(heads/white4.png);
+  background-image: url(heads/white4.PNG);
 }
 ul#faces > li:nth-child(5)::before {
-  background-image: url(heads/white5.png);
+  background-image: url(heads/white5.PNG);
 }
 ul#faces img {
   display: block;
